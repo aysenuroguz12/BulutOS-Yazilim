@@ -51,6 +51,18 @@ table{width:100%;border-collapse:collapse;background:var(--white);border:1px sol
 th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
 th{background:var(--teal-soft);font-family:var(--head)}
 td:first-child{font-weight:600;white-space:nowrap}
+.depts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.depts article{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:16px}
+.depts h3{font-size:1.05rem;margin-bottom:2px}
+.depts .mgr{font-weight:600;color:var(--teal);margin:0 0 6px}
+.depts .task{font-size:.95rem;color:var(--muted);margin:0 0 10px}
+.depts ul{margin:0;padding-left:18px;font-size:.95rem}
+.depts .none{font-size:.9rem;color:var(--muted);margin:0}
+.crew{margin-top:24px;background:var(--teal-soft);border-radius:6px;padding:18px 20px}
+.crew h3{margin-bottom:6px}
+.crew p{margin:0}
+@media(max-width:900px){.depts{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.depts{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.95rem}
 @media(max-width:720px){
   .kit{grid-template-columns:repeat(2,1fr)}
@@ -67,8 +79,10 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     <nav aria-label="Ana menü">
       <a href="#hakkimizda">Hakkımızda</a>
       <a href="#misyon-vizyon">Misyon ve vizyon</a>
+      <a href="#ekip">Ekibimiz</a>
       <a href="#urunler">Ürün ve hizmetler</a>
       <a href="#fiyatlar">Fiyat ve koşullar</a>
+      <a href="#iletisim">İletişim</a>
     </nav>
   </div>
 </header>
@@ -118,6 +132,67 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
     </div>
   </section>
 
+  <section id="ekip">
+    <div class="wrap">
+      <h2>Ekibimiz ve departmanlarımız</h2>
+      <p>Sekiz departmanımızı öğrenci müdürlerimiz yönetir. İşe alınan uzmanlar bağlı oldukları departmanın altında çalışır.</p>
+      <div class="depts">
+        <article>
+          <h3>Genel Müdür</h3>
+          <p class="mgr">Gamze Köz</p>
+          <p class="task">Strateji, hedefler ve ekip koordinasyonu</p>
+          <p class="none">Henüz uzman işe alınmadı.</p>
+        </article>
+        <article>
+          <h3>Finans Müdürü</h3>
+          <p class="mgr">Gamze Köz</p>
+          <p class="task">Bütçe, nakit ve finansal tablolar</p>
+          <ul><li>Jale Öz</li></ul>
+        </article>
+        <article>
+          <h3>Tedarik Müdürü</h3>
+          <p class="mgr">Ayşenur Oğuz</p>
+          <p class="task">Teklifler, sözleşmeler ve satıcı ilişkileri</p>
+          <ul><li>Cansu Yıldız</li></ul>
+        </article>
+        <article>
+          <h3>Operasyon Müdürü</h3>
+          <p class="mgr">Gamze Köz</p>
+          <p class="task">Stok, üretim ve montaj</p>
+          <ul><li>Defne İleri</li></ul>
+        </article>
+        <article>
+          <h3>Pazarlama Müdürü</h3>
+          <p class="mgr">Gamze Köz</p>
+          <p class="task">Fiyat, müşteri ve marka yönetimi</p>
+          <ul><li>Leo Karmann</li><li>Eren Demir</li></ul>
+        </article>
+        <article>
+          <h3>BT ve Veri Müdürü</h3>
+          <p class="mgr">Ayşenur Oğuz</p>
+          <p class="task">Dijital sistemler, veri ve güvenlik</p>
+          <ul><li>Nazan San</li></ul>
+        </article>
+        <article>
+          <h3>İK Müdürü</h3>
+          <p class="mgr">Ayşenur Oğuz</p>
+          <p class="task">İşe alım, görev dağıtımı ve eğitim</p>
+          <ul><li>Orhan Aydın</li></ul>
+        </article>
+        <article>
+          <h3>Risk ve Etik Müdürü</h3>
+          <p class="mgr">Ayşenur Oğuz</p>
+          <p class="task">Uyum, KVKK, risk ve etik kararlar</p>
+          <ul><li>Pelin Tunç</li></ul>
+        </article>
+      </div>
+      <div class="crew">
+        <h3>Üretim ekibi</h3>
+        <p>Operasyon Müdürü'ne bağlı üretim ekibimiz: Sude Yalçın, Melik Dozkurt ve Aslı Kaya.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="urunler">
     <div class="wrap">
       <h2>Ürün ve hizmetlerimiz</h2>
@@ -158,6 +233,14 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
           </tbody>
         </table>
       </div>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <div class="wrap">
+      <h2>İletişim</h2>
+      <p><strong>BulutOS yetkilisi:</strong> Gamze Köz, Genel Müdür</p>
+      <p><strong>E-posta:</strong> <a href="mailto:gamzekoz49@gmail.com">gamzekoz49@gmail.com</a></p>
     </div>
   </section>
 </main>
