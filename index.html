@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BulutOS Yazılım A.Ş.</title>
+<meta name="description" content="BulutOS Yazılım A.Ş. SmartBox ekosistemi için güvenli, ölçeklenebilir yazılım lisansları geliştirir.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f2f6f5; --ink:#11252d; --muted:#4f6670; --line:#cfdcda;
+  --teal:#0b6f78; --teal-soft:#dcedeb; --amber:#d9861a; --white:#fff;
+  --head:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.05rem/1.65 var(--body)}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;flex-wrap:wrap}
+.logo{font:700 1.2rem var(--head);text-decoration:none;color:var(--ink)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--teal)}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2rem,5vw,3.3rem);max-width:18ch}
+h2{font-size:clamp(1.5rem,3vw,2rem)}
+h3{font-size:1.15rem}
+p{margin:0 0 1em;max-width:70ch}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.hero{padding:56px 0 48px;border-top:0}
+.lead{font-size:1.2rem;color:var(--muted)}
+.kit{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}
+.kit div{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:14px 12px;font-weight:600;font-size:.95rem}
+.kit .own{background:var(--teal);border-color:var(--teal);color:var(--white)}
+.kit small{display:block;font-weight:400;opacity:.85;margin-top:2px}
+.note{font-size:.95rem;color:var(--muted);margin-top:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.two > div{border-left:4px solid var(--teal);padding-left:18px}
+.two > div:last-child{border-left-color:var(--amber)}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.products article{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px}
+.tag{display:inline-block;background:var(--teal-soft);color:var(--teal);font-weight:600;font-size:.85rem;padding:2px 10px;border-radius:999px;margin-bottom:10px}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line)}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--teal-soft);font-family:var(--head)}
+td:first-child{font-weight:600;white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.95rem}
+@media(max-width:720px){
+  .kit{grid-template-columns:repeat(2,1fr)}
+  .two,.products{grid-template-columns:1fr}
+  td:first-child{white-space:normal}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">BulutOS Yazılım A.Ş.</a>
+    <nav aria-label="Ana menü">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#misyon-vizyon">Misyon ve vizyon</a>
+      <a href="#urunler">Ürün ve hizmetler</a>
+      <a href="#fiyatlar">Fiyat ve koşullar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Her SmartBox, bir BulutOS lisansıyla çalışır.</h1>
+      <p class="lead">Nesnelerin interneti ve akıllı cihaz teknolojileri için yüksek performanslı, ölçeklenebilir ve siber güvenlik odaklı yazılım lisansları geliştiriyoruz.</p>
+      <div class="kit" role="list" aria-label="SmartBox'ın sekiz bileşeni">
+        <div class="own" role="listitem">Yazılım Lisansı<small>Bizim uzmanlığımız</small></div>
+        <div role="listitem">Enerji Modülü</div>
+        <div role="listitem">İşlemci</div>
+        <div role="listitem">Sensör Kiti</div>
+        <div role="listitem">Kasa / Ambalaj</div>
+        <div role="listitem">Lojistik Tokenı</div>
+        <div role="listitem">Müşteri Analitiği Lisansı</div>
+        <div role="listitem">Garanti Paketi</div>
+      </div>
+      <p class="note">Bir SmartBox, bu sekiz bileşenin birleşmesiyle üretilir. Yazılım lisansı olmadan monte edilemez.</p>
+    </div>
+  </section>
+
+  <section id="hakkimizda">
+    <div class="wrap">
+      <h2>Hakkımızda</h2>
+      <p>BulutOS Yazılım A.Ş., Dijital Şirketler Ligi'nde nesnelerin interneti ve akıllı cihaz teknolojilerinin kalbinde yer alan, yenilikçi yazılım çözümleri geliştiren bir teknoloji şirketidir.</p>
+      <p>Bulut tabanlı mimarimiz ve yüksek güvenlik standartlarımızla SmartBox ekosisteminin en kritik uzmanlık bileşeni olan yazılım lisansını üretiyoruz. Hem B2B pazarda stratejik iş ortaklarımıza lisans tedariği sağlıyoruz hem de kendi nihai SmartBox ürünümüzü monte ederek son kullanıcıya ulaştırıyoruz.</p>
+    </div>
+  </section>
+
+  <section id="misyon-vizyon">
+    <div class="wrap two">
+      <div>
+        <h2>Misyonumuz</h2>
+        <p><strong>Güvenilir yazılım mimarisiyle akıllı ekosistemlerin geleceğini inşa ediyoruz.</strong></p>
+        <p>Varlık nedenimiz, SmartBox ekosistemi için yüksek performanslı, ölçeklenebilir ve siber güvenlik odaklı yazılım lisansları geliştirmektir.</p>
+        <p>B2B iş ortaklarımızın üretim ve operasyonel verimliliğini en üst seviyeye çıkarırken, son kullanıcılarımıza veri etiği, açık rıza ve KVKK standartlarına tam uyumlu, kesintisiz bir dijital deneyim sunmayı taahhüt ediyoruz.</p>
+        <p>Bulut tabanlı mimarimiz, sürdürülebilir kalite politikamız ve stratejik iş birliklerimizle dijital sanayinin en güvenilir yazılım tedarikçisi ve teknoloji partneri olarak hizmet veriyoruz.</p>
+      </div>
+      <div>
+        <h2>Vizyonumuz</h2>
+        <p><strong>Siber güvenlik, veri etiği ve bulut teknolojilerinde küresel ölçekte referans yazılım şirketi olmak.</strong></p>
+        <p>Dijital Şirketler Ligi'nde ve uluslararası akıllı teknoloji pazarında yazılım güvenliği, veri analitiği entegrasyonu ve siber dayanıklılıkta standartları belirleyen öncü güç olmayı hedefliyoruz.</p>
+        <p>BulutOS lisans mimarisini sürekli yenileyerek akıllı cihaz pazarında %100 sistem entegrasyonu sağlayan bir ekosistem liderine dönüşmek; veri gizliliğinden ödün vermeden, sürdürülebilir ve yüksek katma değerli yazılımlarla geleceğin dijital dünyasını şekillendirmek istiyoruz.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="urunler">
+    <div class="wrap">
+      <h2>Ürün ve hizmetlerimiz</h2>
+      <div class="products">
+        <article>
+          <span class="tag">B2B uzmanlık bileşeni</span>
+          <h3>BulutOS Yazılım Lisansı</h3>
+          <p>SmartBox sistemlerinin çalışması için gereken temel yazılım altyapısıdır. Her SmartBox'ın monte edilebilmesi için 1 adet yazılım lisansı gerekir.</p>
+        </article>
+        <article>
+          <span class="tag">Nihai ürün</span>
+          <h3>BulutOS SmartBox</h3>
+          <p>Yazılım lisansı, enerji modülü, işlemci, sensör kiti, kasa/ambalaj, lojistik tokenı, müşteri analitiği lisansı ve garanti paketinin entegrasyonuyla üretilen yüksek teknolojili akıllı kutu çözümüdür.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="fiyatlar">
+    <div class="wrap">
+      <h2>Fiyat listesi ve koşullar</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Ürün</th><th scope="col">Fiyat</th><th scope="col">Koşullar</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BulutOS Yazılım Lisansı (B2B)</td>
+              <td>60 TL / adet</td>
+              <td>Minimum sipariş 10 adet. Ödeme peşin veya 1 tur vadeli. Peşin işlemlerde teslim turunda stok ve nakit eşzamanlı aktarılır. Simülasyon B2B fiyat sınırları: 50–75 TL/adet.</td>
+            </tr>
+            <tr>
+              <td>BulutOS SmartBox (perakende)</td>
+              <td>850 TL / adet</td>
+              <td>Teslimatta %70 peşin, %30 bir sonraki turda tahsil edilir. Simülasyon kabul sınırları: 100–10.000 TL.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© BulutOS Yazılım A.Ş. Dijital Şirketler Ligi</div>
+</footer>
+</body>
+</html>
