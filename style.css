@@ -215,13 +215,13 @@ section{
 
 /* BÜYÜK LOGO - ORAN KORUNUYOR */
 .hero-logo{
-  width:120px;
+  width:320px;
   height:auto;
-  max-height:120px;
+  max-height:none;
   object-fit:contain;
-  border-radius:26px;
+  border-radius:12px;
   box-shadow:var(--shadow);
-  margin-bottom:28px;
+  margin-bottom:20px;
   display:block;
 }
 

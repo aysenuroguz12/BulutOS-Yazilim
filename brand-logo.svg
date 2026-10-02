@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 768" role="img" aria-labelledby="title description">
+  <title id="title">BulutOS Yazılım A.Ş.</title>
+  <desc id="description">Mavi ve turuncu ışıklarla çevrili kod simgeli bulut ve BulutOS yazı logosu.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07101d"/>
+      <stop offset=".58" stop-color="#03060c"/>
+      <stop offset="1" stop-color="#090b10"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1=".15" y1=".15" x2=".88" y2=".82">
+      <stop stop-color="#57d7ff"/>
+      <stop offset=".42" stop-color="#237fe0"/>
+      <stop offset=".72" stop-color="#6ab8ef"/>
+      <stop offset="1" stop-color="#ff984f"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1=".12" y1=".35" x2=".9" y2=".6">
+      <stop stop-color="#49d8ff"/>
+      <stop offset=".48" stop-color="#80ccff"/>
+      <stop offset=".76" stop-color="#ffc06e"/>
+      <stop offset="1" stop-color="#ff7548"/>
+    </linearGradient>
+    <linearGradient id="word" x1=".12" y1="0" x2=".9" y2="0">
+      <stop stop-color="#d8e7f8"/>
+      <stop offset=".66" stop-color="#f7f8fa"/>
+      <stop offset=".84" stop-color="#ffc16f"/>
+      <stop offset="1" stop-color="#ff8153"/>
+    </linearGradient>
+    <filter id="glow" x="-.4" y="-.4" width="1.8" height="1.8">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-.3" y="-.3" width="1.6" height="1.6">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+  <rect width="896" height="768" rx="20" fill="url(#backdrop)"/>
+  <ellipse cx="445" cy="385" rx="317" ry="191" fill="#1474d7" opacity=".13" filter="url(#softGlow)"/>
+  <g fill="none" stroke="#53d7ff" stroke-width="4" opacity=".9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M45 397h137l34-30h74"/><path d="M109 350h76l35-28h89"/>
+    <path d="M158 431h63l38-33h95l28 27"/><path d="M128 477h60l30-31h78l28-29"/>
+    <path d="M228 289h79l23 21"/>
+  </g>
+  <g fill="#59ddff" filter="url(#glow)">
+    <circle cx="45" cy="397" r="8"/><circle cx="109" cy="350" r="8"/><circle cx="158" cy="431" r="7"/>
+    <circle cx="128" cy="477" r="7"/><circle cx="228" cy="289" r="8"/><circle cx="388" cy="425" r="7"/>
+  </g>
+  <path d="M214 433c-2-79 55-143 131-150 23-73 91-122 169-116 78 6 132 63 138 137 62-6 113 39 113 96 0 57-47 102-108 102H329c-64 0-115-29-115-69Z" fill="#050b15" stroke="url(#cloud)" stroke-width="13" filter="url(#glow)"/>
+  <path d="M218 434c-2-77 52-135 127-145 22-68 83-112 160-110 72 2 125 55 137 124" fill="none" stroke="#a5e8ff" stroke-width="4" opacity=".65"/>
+  <ellipse cx="458" cy="391" rx="342" ry="112" transform="rotate(-15 458 391)" fill="none" stroke="#087ed6" stroke-width="34" opacity=".23" filter="url(#softGlow)"/>
+  <ellipse cx="458" cy="391" rx="342" ry="112" transform="rotate(-15 458 391)" fill="none" stroke="url(#orbit)" stroke-width="20"/>
+  <ellipse cx="458" cy="391" rx="342" ry="112" transform="rotate(-15 458 391)" fill="none" stroke="#f5f9ff" stroke-width="3" opacity=".55"/>
+  <text x="448" y="430" text-anchor="middle" fill="#f2f5fa" font-family="Arial, sans-serif" font-weight="600" font-size="116" letter-spacing="-13">&lt;/&gt;</text>
+  <text x="448" y="650" text-anchor="middle" fill="url(#word)" font-family="Arial, sans-serif" font-size="103" font-weight="700" letter-spacing="12">BULUTOS</text>
+  <text x="448" y="711" text-anchor="middle" fill="#d3d9e5" font-family="Arial, sans-serif" font-size="25" font-weight="500" letter-spacing="15">YAZILIM A.Ş.</text>
+</svg>
