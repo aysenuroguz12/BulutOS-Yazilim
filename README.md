@@ -106,9 +106,9 @@ Operasyon Müdürü'ne bağlı üretim ekibimiz: Sude Yalçın, Melik Dozkurt ve
 
 ## İletişim
 
-BulutOS yetkilisi: Gamze Köz, Genel Müdür
+BulutOS kurumsal iletişim
 
-E-posta: gamzekoz49@gmail.com
+E-posta: info@bulutos.com.tr
 
 ---
 

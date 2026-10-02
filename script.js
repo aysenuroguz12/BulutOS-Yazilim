@@ -25,7 +25,7 @@
       var konu = encodeURIComponent(document.getElementById('konu').value);
       var mesaj = document.getElementById('mesaj').value;
       var body = encodeURIComponent('Gönderen: ' + ad + ' (' + mail + ')\n\n' + mesaj);
-      window.location.href = 'mailto:gamzekoz49@gmail.com?subject=' + konu + '&body=' + body;
+      window.location.href = 'mailto:info@bulutos.com.tr?subject=' + konu + '&body=' + body;
     });
   }
 })();
