@@ -32,7 +32,9 @@ a{color:var(--blue)}
   padding:0 24px
 }
 
-img,svg{max-width:100%}
+img,svg{
+  max-width:100%;
+}
 
 /* background glow */
 body::before{
@@ -63,6 +65,7 @@ header .wrap{
   min-height:68px
 }
 
+/* LOGO - ORAN KORUNUYOR */
 .logo{
   display:flex;
   align-items:center;
@@ -74,9 +77,12 @@ header .wrap{
 
 .logo img{
   width:36px;
-  height:36px;
+  height:auto;
+  max-height:36px;
+  object-fit:contain;
   border-radius:9px;
-  display:block
+  display:block;
+  flex-shrink:0;
 }
 
 nav.main{
@@ -133,13 +139,11 @@ nav.main a.active{
     padding:10px 24px 18px;
     gap:14px;
 
-    /* Başlangıçta gizli */
     display:none;
 
     box-shadow:var(--shadow);
   }
 
-  /* JAVASCRIPT'İN EKLEDİĞİ SINIF */
   nav.main.is-open{
     display:flex;
   }
@@ -202,19 +206,23 @@ section{
   color:var(--muted)
 }
 
-/* hero (home) */
+/* hero */
 .hero{
   border-top:0;
   padding:90px 0 70px;
   text-align:left
 }
 
+/* BÜYÜK LOGO - ORAN KORUNUYOR */
 .hero-logo{
   width:120px;
-  height:120px;
+  height:auto;
+  max-height:120px;
+  object-fit:contain;
   border-radius:26px;
   box-shadow:var(--shadow);
-  margin-bottom:28px
+  margin-bottom:28px;
+  display:block;
 }
 
 .hero .lead{
@@ -435,7 +443,7 @@ section{
   margin-top:28px
 }
 
-/* why us (home) */
+/* why us */
 .why .grid-4 .card{
   background:rgba(255,255,255,.03)
 }
@@ -599,4 +607,7 @@ footer{
   .card{
     transition:none
   }
-}
+}git status
+git add style.css
+git commit -m "Mobil hamburger menü düzeltildi"
+git push
