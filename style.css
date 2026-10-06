@@ -1,6 +1,6 @@
 :root{
-  --bg:#0a0f18; --bg-soft:#101722; --card:#151d2a; --line:#2a3647;
-  --ink:#f3f6fa; --muted:#9db0c2;
+  --bg:#151c27; --bg-soft:#1c2531; --card:#212b39; --line:#36465a;
+  --ink:#f5f8fb; --muted:#aebdcd;
   --blue:#4ab3ff; --orange:#ff9a4d;
   --grad:linear-gradient(135deg,var(--blue),var(--orange));
   --head:"Bricolage Grotesque","Trebuchet MS",sans-serif;
