@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KVKK Aydınlatma Metni — BulutOS Yazılım A.Ş.</title>
+<title>İletişim — BulutOS Yazılım A.Ş.</title>
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,7 @@
       <a href="urunler.html">Ürünler</a>
       <a href="departmanlar.html">Departmanlar</a>
       <a href="ekip.html">Ekibimiz</a>
-      <a href="iletisim.html">İletişim</a>
-      <a href="sepet.html" class="cart-link">Sepet <span class="cart-count" data-cart-count>0</span></a>
+      <a href="iletisim.html" class="active">İletişim</a>
     </nav>
     <button class="burger" id="burgerBtn" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mainNav">
       <span></span><span></span><span></span>
@@ -33,34 +32,32 @@
 <main>
   <section class="page-hero">
     <div class="wrap">
-      <p class="eyebrow">Kurumsal</p>
-      <h1>KVKK Aydınlatma Metni</h1>
-      <p class="section-intro">6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında, BulutOS Yazılım A.Ş. olarak kişisel verilerinizi nasıl işlediğimizi aşağıda açıklıyoruz.</p>
+      <p class="eyebrow">İletişim</p>
+      <h1>Bize ulaşın</h1>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="card" style="max-width:68ch">
-        <h3>1. Veri Sorumlusu</h3>
-        <p>Bu aydınlatma metni, veri sorumlusu sıfatıyla BulutOS Yazılım A.Ş. tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("KVKK") 10. maddesi uyarınca hazırlanmıştır.</p>
-
-        <h3>2. İşlenen Kişisel Veri Kategorileri</h3>
-        <p>İletişim formumuzu kullandığınızda ad-soyad, e-posta adresi ve mesaj içeriğiniz tarafımıza ulaşır. B2B iş ortaklarımızla kurduğumuz ilişkilerde ayrıca iletişim ve şirket bilgileri işlenebilir. SmartBox ürünümüzün Müşteri Analitiği Lisansı bileşeni, son kullanıcıların cihaz kullanım verilerini açık rızaya dayalı olarak işler.</p>
-
-        <h3>3. İşleme Amaçları</h3>
-        <p>Kişisel verileriniz; talep ve sorularınızı yanıtlamak, iş ortaklığı süreçlerini yürütmek, SmartBox ekosisteminin güvenli ve kesintisiz çalışmasını sağlamak amaçlarıyla işlenir.</p>
-
-        <h3>4. Hukuki Sebep</h3>
-        <p>Veriler, KVKK m.5'te sayılan açık rıza, bir sözleşmenin kurulması veya ifası ile meşru menfaat hukuki sebeplerine dayanılarak işlenir.</p>
-
-        <h3>5. Veri Sahibinin Hakları</h3>
-        <p>KVKK m.11 uyarınca; kişisel verinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini isteme, KVKK'da öngörülen şartlarda silinmesini/yok edilmesini isteme ve bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme haklarına sahipsiniz.</p>
-
-        <h3>6. Başvuru</h3>
-        <p>Bu haklarınızı kullanmak için talebinizi <a href="mailto:gamzekoz49@gmail.com">gamzekoz49@gmail.com</a> adresine iletebilirsiniz.</p>
-
-        <p style="color:var(--muted);font-size:.9rem;margin-top:24px">Bu metin, Dijital Şirketler Ligi simülasyonu kapsamında BulutOS Yazılım A.Ş. tarafından örnek olarak hazırlanmıştır.</p>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <p><strong>Yetkili</strong>Gamze Köz, Genel Müdür</p>
+         <p><strong>E-posta</strong><a href="mailto:support@bulutos.com.tr">support@bulutos.com.tr</a></p>
+          <p><strong>Adres</strong>Yakında eklenecek</p>
+          <p><strong>Telefon</strong>Yakında eklenecek</p>
+        </div>
+        <form class="contact" id="contactForm">
+          <label for="adsoyad">Ad Soyad</label>
+          <input id="adsoyad" name="adsoyad" type="text" required>
+          <label for="eposta">E-posta</label>
+          <input id="eposta" name="eposta" type="email" required>
+          <label for="konu">Konu</label>
+          <input id="konu" name="konu" type="text" required>
+          <label for="mesaj">Mesaj</label>
+          <textarea id="mesaj" name="mesaj" required></textarea>
+          <button class="btn btn-primary" type="submit">Gönder</button>
+          <p class="form-note">Gönder'e basınca mail uygulamanız, bu bilgilerle hazırlanmış bir taslakla açılır.</p>
+        </form>
       </div>
     </div>
   </section>
@@ -79,6 +76,7 @@
           <li><a href="hakkimizda.html">Hakkımızda</a></li>
           <li><a href="cozumler.html">Çözümler</a></li>
           <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="departmanlar.html">Departmanlar</a></li>
           <li><a href="iletisim.html">İletişim</a></li>
         </ul>
       </div>
