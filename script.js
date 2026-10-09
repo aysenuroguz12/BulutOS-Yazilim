@@ -33,8 +33,8 @@
   var CART_KEY = 'bulutos_cart';
   var ORDER_KEY = 'bulutos_last_order';
   var PRODUCTS = {
-    lisans:   { name: 'BulutOS Yazılım Lisansı', price: 250 },
-    smartbox: { name: 'BulutOS SmartBox',        price: 590 }
+    lisans:   { name: 'BulutOS Yazılım Lisansı', price: 5500 },
+    smartbox: { name: 'BulutOS SmartBox',        price: 7900 }
   };
   var PAY_LABELS = {
     kart:   'Kredi / Banka Kartı (simülasyon)',
