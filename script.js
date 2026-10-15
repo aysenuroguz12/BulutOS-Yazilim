@@ -1,5 +1,3 @@
-
-Script · JS
 (function(){
   /* ---------- Mobil menü ---------- */
   var btn = document.getElementById('burgerBtn');
@@ -16,7 +14,7 @@ Script · JS
       });
     });
   }
- 
+
   /* ---------- İletişim formu (mailto) ---------- */
   var form = document.getElementById('contactForm');
   if(form){
@@ -30,7 +28,7 @@ Script · JS
       window.location.href = 'mailto:support@bulutos.com.tr?subject=' + konu + '&body=' + body;
     });
   }
- 
+
   /* ---------- Sepet / Ödeme / Sipariş (simülasyon) ---------- */
   var CART_KEY = 'bulutos_cart';
   var ORDER_KEY = 'bulutos_last_order';
@@ -43,7 +41,7 @@ Script · JS
     havale: 'Havale / EFT',
     vadeli: 'Vadeli ödeme (1 tur)'
   };
- 
+
   function read(key){ try { return JSON.parse(localStorage.getItem(key)); } catch(e){ return null; } }
   function write(key, val){ try { localStorage.setItem(key, JSON.stringify(val)); } catch(e){} }
   function remove(key){ try { localStorage.removeItem(key); } catch(e){} }
@@ -54,7 +52,7 @@ Script · JS
     if(text !== undefined && text !== null) e.textContent = text;
     return e;
   }
- 
+
   function getCart(){
     var c = read(CART_KEY);
     return (c && typeof c === 'object') ? c : {};
@@ -68,12 +66,12 @@ Script · JS
       });
   }
   function totalOf(ls){ return ls.reduce(function(s, l){ return s + l.total; }, 0); }
- 
+
   function updateBadge(){
     var count = lines(getCart()).reduce(function(s, l){ return s + l.qty; }, 0);
     document.querySelectorAll('[data-cart-count]').forEach(function(b){ b.textContent = count; });
   }
- 
+
   /* Ürünler: Sepete Ekle */
   document.querySelectorAll('.add-to-cart').forEach(function(b){
     b.addEventListener('click', function(){
@@ -88,7 +86,7 @@ Script · JS
       setTimeout(function(){ b.textContent = old; }, 1400);
     });
   });
- 
+
   /* Sepet sayfası */
   var cartRoot = document.getElementById('cartRoot');
   function renderCart(){
@@ -111,7 +109,7 @@ Script · JS
       info.appendChild(el('strong', null, l.name));
       info.appendChild(el('span', null, tl(l.price) + ' / adet'));
       row.appendChild(info);
- 
+
       var qty = el('div', 'qty');
       var dec = el('button', null, '−'); dec.type = 'button';
       dec.setAttribute('data-act', 'dec'); dec.setAttribute('data-id', l.id);
@@ -122,9 +120,9 @@ Script · JS
       inc.setAttribute('aria-label', l.name + ' adedini artır');
       qty.appendChild(dec); qty.appendChild(num); qty.appendChild(inc);
       row.appendChild(qty);
- 
+
       row.appendChild(el('div', 'line-total', tl(l.total)));
- 
+
       var rm = el('button', 'remove', 'Kaldır'); rm.type = 'button';
       rm.setAttribute('data-act', 'rm'); rm.setAttribute('data-id', l.id);
       row.appendChild(rm);
@@ -134,7 +132,7 @@ Script · JS
     sum.appendChild(el('span', null, 'Toplam'));
     sum.appendChild(el('span', null, tl(totalOf(ls))));
     panel.appendChild(sum);
- 
+
     var actions = el('div', 'btn-row');
     var back = el('a', 'btn btn-ghost', 'Alışverişe Devam Et'); back.href = 'urunler.html';
     var go = el('a', 'btn btn-primary', 'Ödemeye Geç'); go.href = 'odeme.html';
@@ -158,7 +156,7 @@ Script · JS
     });
     renderCart();
   }
- 
+
   /* Ödeme sayfası */
   var checkoutForm = document.getElementById('checkoutForm');
   if(checkoutForm){
@@ -177,7 +175,7 @@ Script · JS
         list.appendChild(row);
       });
       document.getElementById('summaryTotal').textContent = tl(totalOf(ls));
- 
+
       checkoutForm.addEventListener('submit', function(e){
         e.preventDefault();
         var current = lines(getCart());
@@ -197,7 +195,7 @@ Script · JS
       });
     }
   }
- 
+
   /* Sipariş sayfası */
   var orderBox = document.getElementById('orderBox');
   if(orderBox){
@@ -221,8 +219,6 @@ Script · JS
       document.getElementById('orderTotal').textContent = tl(order.total);
     }
   }
- 
+
   updateBadge();
 })();
- 
-Claude yanıtı tamamladı
